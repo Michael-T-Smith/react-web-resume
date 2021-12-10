@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <Particles 
+      className="particles-canvas"
       params={{
         particles: {
           number:{
@@ -18,10 +19,10 @@ function App() {
             }
           },
           shape: {
-            type: "circle",
+            type: "polygon",
             stroke: {
               width: 6,
-              color: "#f9ab00"
+              color: "#01a2c6"
             }
           }
         }

@@ -44,6 +44,12 @@ nav ul li {
   height: 6rem !important;
 }
 
+@media(max-width: 768px){
+  .navbar-brand{
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
@@ -73,13 +79,22 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1;
 }
 
 .main-info h1 {
-  color: var(--primary-orange);
+  color: #c708a7;
   text-transform: uppercase;
 }
 
+@media(max-width: 768px){
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
 /********Typed Text*********/
 .typed-text {
   font-size: 2rem;
@@ -96,9 +111,24 @@ nav ul li {
   margin: 2rem;
 }
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+
+/****Particles****/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+@media(max-width: 768px){
+  .particles-canvas{
+    display:none;
+  }
 }
